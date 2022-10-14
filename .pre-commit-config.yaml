@@ -14,5 +14,7 @@ repos:
       - id: check-case-conflict
       - id: detect-private-key
 
-      - id: check-yaml
-        args: [--allow-multiple-documents]
+  - repo: https://github.com/adrienverge/yamllint.git
+    rev: v1.28.0
+    hooks:
+      - id: yamllint
